@@ -19,9 +19,9 @@ export default function About() {
             <h2 className="font-federo lg:text-[45px] text-[36px] uppercase font-normal mb-[15px] tracking-[2px] leading-[1.2em]">
               <span className="text-[#b6ef00]">From idea</span> to Impact
             </h2>
-            <p className="font-barlow text-[20px] text-[#727272] mb-[15px] leading-[1.75em] text-justify">
+            <p className="font-barlow text-[20px] text-[#727272] mb-[15px] leading-[1.75em]">
               At <span className="font-bold ">App Cake Agency</span>, we believe that every great idea deserves a seamless digital experience. We are a team of passionate developers, designers, and strategists dedicated to turning concepts into high-performing apps and websites that not only look amazing but also drive measurable results.
-              With innovation at our core, we blend creativity and cutting-edge technology to deliver solutions that help businesses grow, engage users, and stay ahead in the digital landscape. Whether it’s building a sleek mobile app, a dynamic web platform, or integrating the latest AI features, we bring expertise, dedication, and precision to every project.
+              With innovation at our core, we blend creativity and cutting-edge technology to deliver solutions that help businesses grow, engage users, and stay ahead in the digital landscape.
               Our mission is to <span className="font-bold">make digital solutions as delightful and satisfying as a slice of cake.</span> We work closely with our clients to understand their goals, craft tailored strategies, and deliver exceptional results that exceed expectations.
 
             </p>
