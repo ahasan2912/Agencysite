@@ -6,13 +6,13 @@ export default function Card({ service }: { service: IService }) {
 
     return (
         <div
-            className="group relative bg-[#f0f0f3] rounded-[20px_20px_0_20px] p-[50px_40px_90px_40px] z-[2] mb-[15px] min-h-[280px]"
+            className="group relative bg-[#f0f0f3] rounded-[20px_20px_0_20px] p-[50px_40px_90px_40px] z-[2] mb-[15px] min-h-[380px]"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
         >
             {/* Text Content */}
             <div className="text">
-                <h3 className="text-[20px] font-normal mb-4 tracking-[2px] font-federo group-hover:text-black text-gray-800 ">
+                <h3 className="text-[19px] font-semibold mb-4 tracking-[2px] font-federo group-hover:text-black text-gray-800 ">
                     {service.title}
                 </h3>
                 <p dangerouslySetInnerHTML={{ __html: service.description }} />

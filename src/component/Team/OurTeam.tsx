@@ -19,7 +19,7 @@ export default function OurTeam() {
                             Our Team
                         </h2>
                         <p className="text-[#727272] text-[17px] font-barlow leading-[1.75em] mb-[15px]">
-                            Agency quisque sodales miss in the variustion vestibulum drana miss in the turpis tellus elite sorttiton the in the fermen.
+                            A dedicated team of 400+ developers, designers, and strategists bringing your digital ideas to life.
                         </p>
                         <PrimaryButton buttonname="all team" />
                     </div>

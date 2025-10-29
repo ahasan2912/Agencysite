@@ -4,20 +4,21 @@ import Marquee from "react-fast-marquee";
 
 const MarqueeSection = () => {
     const items = [
-        "CREATIVE",
-        "WEB",
-        "DEVELOPMENT",
-        "MARKETING",
-        "ECOMMERCE",
-        "BRANDING",
-        "STRATEGY",
-        "SOCIAL",
-        "MEDIA",
-        "DIGITAL",
-        "PHOTOSHOP",
-        "ILLUSTRATOR",
-        "GRAPHIC",
-        "DESIGN",
+        "Mobile Apps",
+        "iOS & Android",
+        "Cross-Platform Apps",
+        "Hybrid & Native Apps",
+        "Website Development",
+        "Web Design",
+        "E-commerce Platforms",
+        "CMS Solutions",
+        "AI Development",
+        "Chatbots & Automation",
+        "UX/UI Design",
+        "Interaction Design",
+        "Digital Strategy",
+        "Consulting",
+        "Support & Maintenance",
     ];
 
     return (

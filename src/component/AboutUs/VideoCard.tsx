@@ -33,13 +33,6 @@ export default function VideoCard() {
           <div className="absolute top-[-20px] left-[6px] w-[20px] h-[20px] rounded-br-[20px] shadow-[6px_6px_0_6px_#fff] rotate-90"></div>
           <div className="absolute bottom-[6px] right-[-20px] w-[20px] h-[20px] rounded-br-[20px] shadow-[6px_6px_0_6px_#fff] rotate-90"></div>
         </div>
-
-        {/* Title */}
-        <div className="absolute bottom-[20px] left-[105px] z-[1]">
-          <h4 className="text-white text-lg font-federo tracking-[2px] uppercase font-normal">
-            Watch Video
-          </h4>
-        </div>
       </div>
 
       {/* Popup Modal */}

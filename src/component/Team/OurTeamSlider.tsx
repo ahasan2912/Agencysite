@@ -12,12 +12,12 @@ import Image from "next/image";
 
 export default function OurTeamSlider() {
     const teamMembers = [
-        { id: 1, name: "Abdur Rakib Rafi", role: "Mobile App Developer", image: "/images/member-1.png" },
-        { id: 2, name: "Uzzal Bhowmik", role: "Front End Developer", image: "/images/member-2.png" },
-        { id: 3, name: "Minhaz Sharif Akash", role: "UX/UI Designer", image: "/images/member-3.png" },
-        { id: 4, name: "Ahad Hossain Aiman", role: "Back End Developer", image: "/images/member-4.png" },
-        { id: 5, name: "Abdur Rakib Rafi", role: "Mobile App Developer", image: "/images/member-1.png" },
-        { id: 6, name: "Minhaz Sharif Akash", role: "UX/UI Designer", image: "/images/member-3.png" },
+        { id: 1, name: "Meherun Nesa", role: "Project Manager", image: "/images/x.png" },
+        { id: 2, name: "Minhajul Islam Akash", role: "UI/UX Designer", image: "/images/x.png" },
+        { id: 3, name: "Abdullah Al Nasim", role: "Backend Developer", image: "/images/x.png" },
+        { id: 4, name: "Bodruddoza Khilzee", role: "Frontend Developer", image: "/images/x.png" },
+        { id: 5, name: "Selim Reza", role: "Full-stack Developer", image: "/images/x.png" },
+        { id: 6, name: "Fahim Hossain", role: "Senior AI Developer", image: "/images/x.png" },
     ];
 
     const [activeMemberId, setActiveMemberId] = useState<number | null>(null);

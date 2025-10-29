@@ -14,7 +14,7 @@ export default function Blog() {
                     </div>
                     <h2 className="text-[#101010] lg:text-[45px] text-[36px] mb-[15px]
                 font-federo tracking-[2px] font-normal uppercase text-center">
-                        Latest News
+                        Top Contributor
                     </h2>
                 </div>
                 <BlogSlider />

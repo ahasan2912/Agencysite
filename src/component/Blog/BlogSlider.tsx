@@ -9,10 +9,9 @@ import Image from "next/image";
 
 export default function BlogSlider() {
     const projects = [
-        { id: 1, category: "Branding", title: "PRODUCT DESIGN", image: "/images/app__indus__01.jpg" },
-        { id: 3, category: "Branding", title: "BRAND IDENTITY", image: "/images/app__indus__03.png" },
-        { id: 4, category: "UI/UX", title: "MOBILE APP", image: "/images/app__indus__04.png" },
-        { id: 5, category: "UI/UX", title: "MOBILE APP", image: "/images/app__indus__05.png" }
+        { id: 1, name: "Rakibul Islam", title: "Senior Mobile App Developer", image: "/images/app__indus__01.jpg" },
+        { id: 2, name: "Farvez Hossen", title: "Backend Developer", image: "/images/app__indus__03.png" },
+        { id: 3, name: "Abdullah Al Mahmud", title: "Flutter App Developer", image: "/images/app__indus__04.png" },
     ];
 
     return (
@@ -45,10 +44,11 @@ export default function BlogSlider() {
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-[20px]" />
                             </div>
 
-                            <div className="relative z-10 h-full flex flex-col justify-end p-10">
+                            <div className="relative z-10 h-full flex flex-col justify-end py-10 px-8">
                                 <div className="flex items-end justify-between">
-                                    <div className="text-white max-w-[250px] text-[17px] font-federo tracking-[2px] leading-[1.4em] uppercase">
-                                        App Industries
+                                    <div className="text-white max-w-[250px] font-federo tracking-[2px] leading-[1.4em] uppercase space-y-1.5">
+                                        <h1 className="text-[17px]">{project.name}</h1>
+                                        <p className="text-[12px] font-barlow">{project.title}</p>
                                     </div>
                                     <div className="absolute bottom-[-6px] right-[-6px] w-[90px] h-[90px] bg-white rounded-tl-[50%] p-[15px] flex items-center justify-center cursor-pointer">
                                         <div

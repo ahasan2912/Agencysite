@@ -57,7 +57,8 @@ export default function PromotionVideoBanner() {
                     VIDEOS
                 </h2>
             </div>
-            <div className="absolute inset-0 flex items-center justify-center z-10">
+            {/* video circle icon and path */}
+            {/* <div className="absolute inset-0 flex items-center justify-center z-10">
                 <div className="relative items-center justify-center mr-24 lg:flex hidden">
                     <div
                         className="w-[88px] h-[88px] rounded-full border border-[#AEEF41] flex items-center justify-center cursor-pointer z-10"
@@ -66,7 +67,6 @@ export default function PromotionVideoBanner() {
                         <Play color="transparent" fill="#AEEF41" width={50} height={50} />
                     </div>
 
-                    {/* Circular Text Path */}
                     <div className="absolute w-[160px] h-[160px] animate-spin-slow">
                         <svg viewBox="0 0 200 200" className="w-full h-full">
                             <defs>
@@ -93,7 +93,7 @@ export default function PromotionVideoBanner() {
                         </svg>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {
                 open && (
