@@ -35,7 +35,7 @@ export default function TestimonialSlider() {
             id: 4,
             icon: <FaQuoteLeft />,
             description: 'Patient, professional, cares about the experience, and the end result!!',
-            clientImg: '/images/x.jpg',
+            clientImg: '/images/client__01.webp',
             clientName: "labellavibes",
             designation: "Customer",
         }

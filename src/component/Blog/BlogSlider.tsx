@@ -9,9 +9,9 @@ import Image from "next/image";
 
 export default function BlogSlider() {
     const projects = [
-        { id: 1, name: "Rakibul Islam", title: "Senior Mobile App Developer", image: "/images/app__indus__01.jpg" },
-        { id: 2, name: "Farvez Hossen", title: "Backend Developer", image: "/images/app__indus__03.png" },
-        { id: 3, name: "Abdullah Al Mahmud", title: "Flutter App Developer", image: "/images/app__indus__04.png" },
+        { id: 1, name: "Rakibul Islam", title: "Senior Mobile App Developer", image: "/images/Rakibul_Islam.jpg" },
+        { id: 2, name: "Farvez Hossen", title: "Backend Developer", image: "/images/Farvez_Hossen.jpg" },
+        { id: 3, name: "Abdullah Al Mahmud", title: "Flutter App Developer", image: "/images/Abdullah_Mahmud.jpg" },
     ];
 
     return (

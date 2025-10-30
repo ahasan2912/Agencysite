@@ -12,12 +12,12 @@ import Image from "next/image";
 
 export default function OurTeamSlider() {
     const teamMembers = [
-        { id: 1, name: "Meherun Nesa", role: "Project Manager", image: "/images/x.png" },
-        { id: 2, name: "Minhajul Islam Akash", role: "UI/UX Designer", image: "/images/x.png" },
-        { id: 3, name: "Abdullah Al Nasim", role: "Backend Developer", image: "/images/x.png" },
-        { id: 4, name: "Bodruddoza Khilzee", role: "Frontend Developer", image: "/images/x.png" },
-        { id: 5, name: "Selim Reza", role: "Full-stack Developer", image: "/images/x.png" },
-        { id: 6, name: "Fahim Hossain", role: "Senior AI Developer", image: "/images/x.png" },
+        { id: 1, name: "Meherun Nesa", role: "Project Manager", image: "/images/Meherun_Nesa.png" },
+        { id: 2, name: "Minhajul Islam Akash", role: "UI/UX Designer", image: "/images/Akash.png" },
+        { id: 3, name: "Abdullah Al Nasim", role: "Backend Developer", image: "/images/Nasim.png" },
+        { id: 4, name: "Bodruddoza Khilzee", role: "Frontend Developer", image: "/images/Khilzee.png" },
+        { id: 5, name: "Selim Reza", role: "Full-stack Developer", image: "/images/Selim_Reza.png" },
+        { id: 6, name: "Fahim Hossain", role: "Senior AI Developer", image: "/images/Fahim.png" },
     ];
 
     const [activeMemberId, setActiveMemberId] = useState<number | null>(null);
@@ -57,7 +57,7 @@ export default function OurTeamSlider() {
                                 src={member.image}
                                 alt={member.name}
                                fill
-                                className="w-full h-full object-contain rounded-[20px_20px_0_20px]"
+                                className="w-full h-full object-cover rounded-[20px_20px_0_20px]"
                             />
                           </div>
                             {activeMemberId === member.id && (
