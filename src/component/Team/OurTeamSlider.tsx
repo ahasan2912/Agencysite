@@ -20,20 +20,6 @@ export default function OurTeamSlider() {
         { id: 6, name: "Fahim Hossain", role: "Senior AI Developer", image: "/images/Fahim.png" },
     ];
 
-    const [activeMemberId, setActiveMemberId] = useState<number | null>(null);
-    const [memberInfo, setMemberInfo] = useState<TeamMember | null>(null);
-
-    const toggleMode = (id: number) => {
-        if (activeMemberId === id) {
-            setActiveMemberId(null);
-            setMemberInfo(null);
-        } else {
-            const memberInformation = teamMembers.find((member) => member.id === id) || null;
-            setActiveMemberId(id);
-            setMemberInfo(memberInformation);
-        }
-    };
-
     return (
         <Swiper
             modules={[Autoplay]}
@@ -52,27 +38,21 @@ export default function OurTeamSlider() {
                 <SwiperSlide key={member.id}>
                     <div className="flex w-full min-h-[420px] items-stretch relative">
                         <div className="group relative flex-1 rounded-[20px_20px_0_20px] bg-[#f0f0f3]  z-[2] mb-[15px] min-h-[331px] overflow-hidden">
-                          <div className="w-[290px] h-auto aspect-[290/331]">
-                              <Image
-                                src={member.image}
-                                alt={member.name}
-                               fill
-                                className="w-full h-full object-cover rounded-[20px_20px_0_20px]"
-                            />
-                          </div>
-                            {activeMemberId === member.id && (
-                                <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px] animate-fadeIn z-10"></div>
-                            )}
-                            {activeMemberId === member.id && memberInfo && (
-                                <div className="w-fit absolute bottom-1 left-1 z-20 rounded-lg px-4 py-2 bg-[#b6ef00] text-black animate-slideUp">
-                                    <h1 className="text-xl font-normal font-federo">{memberInfo.name}</h1>
-                                    <h2 className="text-[12px] font-normal font-barlow">{memberInfo.role}</h2>
-                                </div>
-                            )}
+                            <div className="w-[290px] h-auto aspect-[290/331]">
+                                <Image
+                                    src={member.image}
+                                    alt={member.name}
+                                    fill
+                                    className="w-full h-full object-cover rounded-[20px_20px_0_20px]"
+                                />
+                            </div>
+                            <div className="w-fit absolute bottom-2 left-2 z-20 rounded-lg px-4 py-2 bg-[#b6ef00] text-black">
+                                <h1 className="text-xl font-normal font-federo">{member.name}</h1>
+                                <h2 className="text-[12px] font-normal font-barlow">{member.role}</h2>
+                            </div>
                             <div className="absolute bottom-[-6px] right-[-6px] w-[90px] h-[90px] bg-white rounded-tl-[50%] p-[15px] flex items-center justify-center cursor-pointer z-30">
                                 <button
-                                    onClick={() => toggleMode(member.id)}
-                                    className="relative w-full cursor-pointer h-full flex items-center justify-center bg-[#101010] text-white text-3xl rounded-full transition-all duration-500 group-hover:bg-[#b6ef00] group-hover:text-[#101010]"
+                                    className="relative w-full h-full flex items-center justify-center bg-[#101010] text-white text-3xl rounded-full transition-all duration-500 group-hover:bg-[#b6ef00] group-hover:text-[#101010]"
                                 >
                                     <IoInformation />
                                 </button>

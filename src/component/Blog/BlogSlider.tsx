@@ -6,12 +6,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function BlogSlider() {
     const projects = [
-        { id: 1, name: "Rakibul Islam", title: "Senior Mobile App Developer", image: "/images/Rakibul_Islam.jpg" },
-        { id: 2, name: "Farvez Hossen", title: "Backend Developer", image: "/images/Farvez_Hossen.jpg" },
-        { id: 3, name: "Abdullah Al Mahmud", title: "Flutter App Developer", image: "/images/Abdullah_Mahmud.jpg" },
+        { id: 1, name: "Rakibul Islam", title: "CEO", image: "/images/Rakibul_Islam.jpg", link: "https://www.upwork.com/freelancers/rakibuli86" },
+        { id: 2, name: "Farvez Hossen", title: "Head of Operations", image: "/images/Farvez_Hossen.jpg", link: "https://www.upwork.com/freelancers/farvezh" },
+        { id: 3, name: "Abdullah Al Mahmud", title: "Business Strategy Manager", image: "/images/Abdullah_Mahmud.jpg", link: "https://www.upwork.com/freelancers/mdabdullaha65" },
     ];
 
     return (
@@ -55,7 +56,7 @@ export default function BlogSlider() {
                                             className="relative w-full h-full flex items-center justify-center text-3xl rounded-full transition-all duration-500
                                             bg-[#101010] group-hover/slide:bg-[#b6ef00] text-[#fff] group-hover/slide:text-[#101010]"
                                         >
-                                            <ArrowUpRight className=" transition-all duration-500 group-hover/slide:color-[#101010]" />
+                                            <Link href={project?.link}><ArrowUpRight className=" transition-all duration-500 group-hover/slide:color-[#101010]" /></Link>
                                         </div>
                                         <span className="absolute bottom-[6px] left-[-20px] w-[20px] h-[20px] bg-transparent rounded-br-[20px] shadow-[10px_6px_0_6px_#fff]"></span>
                                         <span className="absolute top-[-20px] right-[6px] w-[20px] h-[20px] bg-transparent rounded-br-[20px] shadow-[10px_6px_0_6px_#fff]"></span>
