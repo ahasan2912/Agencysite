@@ -25,8 +25,8 @@ export default function page() {
       <PromotionVideoBanner />
       <MarqueeSection/>
       <Testimonial />
-      <Blog />
       <LogoSlider />
+      <Blog />
       <ProjectInMind/>
       <Footer/>
     </div>

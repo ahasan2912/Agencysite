@@ -64,7 +64,7 @@ export default function LogoSlider() {
     }, []);
 
     return (
-        <div className="container bg-white overflow-hidden logo-slider-container pb-[120px]">
+        <div className="container bg-white overflow-hidden logo-slider-container">
             <div ref={swiperRef} className="swiper">
                 <div className="swiper-wrapper">
                     {[...logos, ...logos, ...logos].map((logo, index) => (

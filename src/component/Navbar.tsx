@@ -8,13 +8,13 @@ export default function DagencyHero() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const navItems = [
-    { name: "HOME", hasDropdown: true },
-    { name: "ABOUT", hasDropdown: false },
-    { name: "SERVICES", hasDropdown: true },
-    { name: "PAGES", hasDropdown: true },
-    { name: "SHOP", hasDropdown: true },
-    { name: "BLOG", hasDropdown: true },
-    { name: "CONTACT", hasDropdown: false },
+    { name: "HOME", hasDropdown: true, link: '#home' },
+    { name: "ABOUT", hasDropdown: false, link: '#about' },
+    { name: "SERVICES", hasDropdown: true, link: '#services' },
+    { name: "WORKS", hasDropdown: true, link: '#works' },
+    { name: "TEAM", hasDropdown: true, link: '#team' },
+    { name: "TESTIMONIALS", hasDropdown: true, link: '#testimonials' },
+    { name: "CONTACT", hasDropdown: false, link: '#contact' },
   ];
 
   useEffect(() => {
@@ -57,7 +57,7 @@ export default function DagencyHero() {
                     : "text-white hover:text-[#B6EF00]"
                     }`}
                 >
-                  <span>{item.name}</span>
+                  <Link href={item.link}>{item.name}</Link>
                 </button>
               ))}
             </div>
@@ -82,7 +82,7 @@ export default function DagencyHero() {
                   key={item.name}
                   className="text-white hover:text-lime-400 transition-colors duration-300 flex items-center justify-between w-full text-sm font-medium tracking-wide"
                 >
-                  <span>{item.name}</span>
+                  <Link href={item.link}>{item.name}</Link>
                   {item.hasDropdown && <ChevronDown className="w-4 h-4" />}
                 </button>
               ))}

@@ -159,3 +159,6 @@ body .swiper.swiper-initialized {
       background: linear-gradient(to left, white, transparent);
 }
 
+html {
+  scroll-behavior: smooth;
+}

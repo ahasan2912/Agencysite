@@ -5,7 +5,7 @@ import OurTeamSlider from './OurTeamSlider'
 export default function OurTeam() {
     return (
         <>
-            <div className="pt-[120px] pb-[90px] ml-[calc((100%-1220px)/2)] max-[1536px]:ml-[calc((100%-1220px)/2)] max-[1220px]:ml-[calc((100%-1024px)/2)] max-[1023px]:ml-[calc((100%-768px)/2)] max-[768px]:ml-[calc((100%-640px)/2)] max-[640px]:ml-8">
+            <div id='team' className="pt-[120px] pb-[90px] ml-[calc((100%-1220px)/2)] max-[1536px]:ml-[calc((100%-1220px)/2)] max-[1220px]:ml-[calc((100%-1024px)/2)] max-[1023px]:ml-[calc((100%-768px)/2)] max-[768px]:ml-[calc((100%-640px)/2)] max-[640px]:ml-8">
                 <div className='flex lg:flex-row flex-col lg:gap-10 gap-7'>
                     <div className='mb-[15px] w-[384px] max-w-[100%]'>
                         <div className="flex items-center gap-2.5 mb-2.5">

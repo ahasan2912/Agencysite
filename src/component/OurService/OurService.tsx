@@ -5,7 +5,7 @@ import ServicesSlider from './ServiceSlider'
 export default function OurService() {
     return (
         <>
-            <div className="container pt-[120px] pb-[90px]">
+            <div id='services' className="container pt-[120px] pb-[90px] services">
                 <div className='mb-[15px]'>
                     <div className="flex items-center justify-center gap-2.5 mb-2.5">
                         <div className="w-1.5 h-1.5 rounded-full bg-[#AEEF41]"></div>

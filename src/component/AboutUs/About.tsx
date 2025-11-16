@@ -6,7 +6,7 @@ import VideoCard from "./VideoCard";
 export default function About() {
   return (
     <>
-      <div className="relative container mx-auto py-[120px]">
+      <div id="about" className="relative container mx-auto py-[120px]">
         <div className="grid lg:grid-cols-2 grid-cols-1 items-center lg:gap-0 gap-10">
           <div>
             <div className="flex items-center gap-2.5 mb-2.5">

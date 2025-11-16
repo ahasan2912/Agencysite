@@ -5,7 +5,7 @@ import TestimonialSlider from './TestimonialSlider'
 export default function Testimonial() {
     return (
         <>
-            <div className="container pt-[120px] pb-[90px]">
+            <div id='testimonials' className="container pt-[120px] pb-[90px]">
                 <div className='mb-[15px]'>
                     <div className="flex items-center justify-center gap-2.5 mb-2.5">
                         <div className="w-1.5 h-1.5 rounded-full bg-[#AEEF41]"></div>
@@ -20,7 +20,6 @@ export default function Testimonial() {
                 </div>
                 <TestimonialSlider />
             </div>
-            <div className="relative mx-auto -my-[25px] border-0 border-l border-l-[#b6ef00] w-[2px] h-[50px] z-10 opacity-100"></div>
         </>
     )
 }

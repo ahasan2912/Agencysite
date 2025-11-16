@@ -11,7 +11,7 @@ export default function HeroBanner() {
 
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat bg-fixed relative"
+      id="home" className="bg-cover bg-center bg-no-repeat bg-fixed relative" 
       style={{ backgroundImage: `url('/images/heroImage.jpg')` }}
     >
       <div className="absolute inset-0 bg-black/50 z-0"></div>
