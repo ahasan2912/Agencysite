@@ -12,11 +12,11 @@ import Image from "next/image";
 
 export default function OurTeamSlider() {
     const teamMembers = [
-        { id: 1, name: "Meherun Nesa", role: "Project Manager", image: "/images/Meherun_Nesa.png" },
-        { id: 2, name: "Minhajul Islam Akash", role: "UI/UX Designer", image: "/images/Akash.png" },
-        { id: 3, name: "Abdullah Al Nasim", role: "Backend Developer", image: "/images/Nasim.png" },
+        { id: 1, name: "Zahid Hasan", role: "Project Manager", image: "/images/Zahid_Hasan.png" },
+        { id: 2, name: "Abdul Al Mamun", role: "Full-stack Developer", image: "/images/Abdul_Al_Mamun.png" },
+        { id: 3, name: "Najmul Hossain", role: "Backend Developer", image: "/images/Najmul_Hassoin.png" },
         { id: 4, name: "Bodruddoza Khilzee", role: "Frontend Developer", image: "/images/Khilzee.png" },
-        { id: 5, name: "Selim Reza", role: "Full-stack Developer", image: "/images/Selim_Reza.png" },
+        { id: 5, name: "Selim Reza", role: "UI/UX Designer", image: "/images/Selim_Reza.png" },
         { id: 6, name: "Fahim Hossain", role: "Senior AI Developer", image: "/images/Fahim.png" },
     ];
 
@@ -48,7 +48,7 @@ export default function OurTeamSlider() {
                             </div>
                             <div className="w-fit absolute bottom-2 left-2 z-20 rounded-lg px-4 py-2 bg-[#b6ef00] text-black">
                                 <h1 className="text-xl font-normal font-federo">{member.name}</h1>
-                                <h2 className="text-[12px] font-normal font-barlow">{member.role}</h2>
+                                <h2 className="text-[12px] font-medium font-barlow">{member.role}</h2>
                             </div>
                             <div className="absolute bottom-[-6px] right-[-6px] w-[90px] h-[90px] bg-white rounded-tl-[50%] p-[15px] flex items-center justify-center cursor-pointer z-30">
                                 <button
