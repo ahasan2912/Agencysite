@@ -7,7 +7,7 @@ export default function OurTeam() {
         <>
             <div id='team' className="pt-[120px] pb-[90px] ml-[calc((100%-1220px)/2)] max-[1536px]:ml-[calc((100%-1220px)/2)] max-[1220px]:ml-[calc((100%-1024px)/2)] max-[1023px]:ml-[calc((100%-768px)/2)] max-[768px]:ml-[calc((100%-640px)/2)] max-[640px]:ml-8">
                 <div className='flex lg:flex-row flex-col lg:gap-10 gap-7'>
-                    <div className='mb-[15px] w-[384px] max-w-[100%]'>
+                    <div className='mb-[15px] w-[384px] max-w-[100%] lg:sticky lg:top-[calc((100vh-420px)/2)] lg:self-start'>
                         <div className="flex items-center gap-2.5 mb-2.5">
                             <div className="w-1.5 h-1.5 rounded-full bg-[#AEEF41]"></div>
                             <h4 className="text-[#101010] text-[17px] max-w-[735px] font-federo tracking-[2px] font-normal uppercase">
