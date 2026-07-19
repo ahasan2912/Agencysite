@@ -11,8 +11,8 @@ import Link from "next/link";
 export default function BlogSlider() {
     const projects = [
         { id: 1, name: "Rakibul Islam", title: "CEO", image: "/images/Rakibul_Islam.jpg", link: "https://www.upwork.com/freelancers/rakibuli86" },
-        { id: 2, name: "Farvez Hossen", title: "Head of Operations", image: "/images/Farvez_Hossen.jpg", link: "https://www.upwork.com/freelancers/farvezh" },
-        { id: 3, name: "Abdullah Al Mahmud", title: "Business Strategy Manager", image: "/images/Abdullah_Mahmud.jpg", link: "https://www.upwork.com/freelancers/mdabdullaha65" },
+        { id: 2, name: "Zahid Hasan", title: "Head of Operations", image: "/images/zahid_PM2.png", link: "https://www.linkedin.com/in/mr-zahid-hasan" },
+        { id: 3, name: "Farvez Hossen", title: "Business Strategy Manager", image: "/images/Farvez_Hossen.jpg", link: "https://www.upwork.com/freelancers/farvezh" },
     ];
 
     return (

@@ -12,7 +12,7 @@ export default function OurTeamSlider() {
     const [scrollHeight, setScrollHeight] = useState("100vh");
 
     const teamMembers = [
-        { id: 1, name: "Zahid Hasan", role: "Project Manager", image: "/images/Zahid_Hasan.png" },
+        { id: 1, name: "Zahid Hasan", role: "Project Manager", image: "/images/zahid_PM_1243x1202.png" },
         { id: 2, name: "Abdul Al Mamun", role: "Full-stack Developer", image: "/images/Abdul_Al_Mamun.png" },
         { id: 3, name: "Najmul Hossain", role: "Backend Developer", image: "/images/Najmul_Hassoin.png" },
         { id: 4, name: "Bodruddoza Khilzee", role: "Frontend Developer", image: "/images/Khilzee.png" },
@@ -59,31 +59,31 @@ export default function OurTeamSlider() {
                     {teamMembers.map((member) => (
                         <div
                             key={member.id}
-                            className="flex min-h-[420px] w-[calc(100vw-56px)] shrink-0 items-stretch relative sm:w-[calc((100vw-96px)/2)] lg:w-[340px] xl:w-[380px]"
+                            className="flex min-h-105 w-[calc(100vw-56px)] shrink-0 items-stretch relative sm:w-[calc((100vw-96px)/2)] lg:w-85 xl:w-95"
                         >
-                            <div className="group relative flex-1 rounded-[20px_20px_0_20px] z-[2] mb-[15px] min-h-[331px] overflow-hidden bg-[#C6C6C6]">
-                                <div className="relative w-full h-full min-h-[405px]">
+                            <div className="group relative flex-1 rounded-[20px_20px_0_20px] z-2 mb-3.75 min-h-82.75 overflow-hidden bg-[#C6C6C6]">
+                                <div className="relative w-full h-full min-h-101.25">
                                     <Image
                                         src={member.image}
                                         alt={member.name}
                                         fill
                                         sizes="(max-width: 640px) calc(100vw - 56px), (max-width: 1024px) 50vw, 380px"
-                                        className={`w-full h-full object-cover rounded-[20px_20px_0_20px] ${member.id === 1 ? "object-[45%_center] sm:object-[-50%_center]" : ""}`}
+                                        className={`w-full h-full object-cover rounded-[20px_20px_0_20px]`}
                                     />
                                 </div>
                                 <div className="w-fit absolute bottom-2 left-2 z-20 rounded-lg px-4 py-2 bg-[#b6ef00] text-black">
                                     <h1 className="text-xl font-normal font-federo">{member.name}</h1>
                                     <h2 className="text-[12px] font-medium font-barlow">{member.role}</h2>
                                 </div>
-                                <div className="absolute bottom-[-6px] right-[-6px] w-[90px] h-[90px] bg-white rounded-tl-[50%] p-[15px] flex items-center justify-center cursor-pointer z-30">
+                                <div className="absolute -bottom-1.5 -right-1.5 w-22.5 h-22.5 bg-white rounded-tl-[50%] p-3.75 flex items-center justify-center cursor-pointer z-30">
                                     <button
                                         className="relative w-full h-full flex items-center justify-center bg-[#101010] text-white text-3xl rounded-full transition-all duration-500 group-hover:bg-[#b6ef00] group-hover:text-[#101010]"
                                         aria-label={`View ${member.name} details`}
                                     >
                                         <IoInformation />
                                     </button>
-                                    <span className="absolute bottom-[6px] left-[-20px] w-[20px] h-[20px] bg-transparent rounded-br-[20px] shadow-[6px_6px_0_6px_#fff]"></span>
-                                    <span className="absolute top-[-20px] right-[6px] w-[20px] h-[20px] bg-transparent rounded-br-[20px] shadow-[6px_6px_0_6px_#fff]"></span>
+                                    <span className="absolute bottom-1.5 -left-5 w-5 h-5 bg-transparent rounded-br-[20px] shadow-[6px_6px_0_6px_#fff]"></span>
+                                    <span className="absolute -top-5 right-1.5 w-5 h-5 bg-transparent rounded-br-[20px] shadow-[6px_6px_0_6px_#fff]"></span>
                                 </div>
                             </div>
                         </div>

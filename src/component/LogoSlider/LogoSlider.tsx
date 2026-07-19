@@ -6,13 +6,16 @@ import Image from 'next/image';
 export default function LogoSlider() {
     const swiperRef = useRef(null);
     const logos = [
-        { id: 1, src: '/images/logo-awwwards-white.svg', alt: 'Walmart' },
-        { id: 2, src: '/images/logo-awwwards-white.svg', alt: 'WooCommerce' },
-        { id: 3, src: '/images/logo-awwwards-white.svg', alt: 'Awwwards' },
-        { id: 4, src: '/images/logo-awwwards-white.svg', alt: 'Envato' },
-        { id: 5, src: '/images/logo-awwwards-white.svg', alt: 'Monday' },
-        { id: 6, src: '/images/logo-awwwards-white.svg', alt: 'Monday' },
-        { id: 7, src: '/images/logo-awwwards-white.svg', alt: 'Monday' },
+        { id: 3, src: '/images/logo/Bitdefender.png', alt: 'Bitdefender' },
+        { id: 4, src: '/images/logo/Fortinet.png', alt: 'Fortinet' },
+        { id: 6, src: '/images/logo/Google.png', alt: 'Google' },
+        { id: 8, src: '/images/logo/Kaspersky.png', alt: 'Kaspersky' },
+        { id: 9, src: '/images/logo/Mircrosoft.png', alt: 'Mircrosoft' },
+        { id: 10, src: '/images/logo/Oddo.png', alt: 'Oddo' },
+        { id: 11, src: '/images/logo/Oracle.png', alt: 'Oracle' },
+        { id: 12, src: '/images/logo/RedHat.png', alt: 'RedHat' },
+        { id: 13, src: '/images/logo/Tenable.png', alt: 'Tenable' },
+        { id: 14, src: '/images/logo/Trend.png', alt: 'Trend' },
     ];
 
     useEffect(() => {
@@ -27,7 +30,7 @@ export default function LogoSlider() {
         script.onload = () => {
             if ((window as any).Swiper && swiperRef.current) {
                 new (window as any).Swiper(swiperRef.current, {
-                    slidesPerView: 5,
+                    slidesPerView: 6,
                     spaceBetween: 30,
                     loop: true,
                     speed: 3000,
@@ -48,7 +51,7 @@ export default function LogoSlider() {
                             spaceBetween: 20,
                         },
                         1024: {
-                            slidesPerView: 5,
+                            slidesPerView: 6,
                             spaceBetween: 30,
                         },
                     },
@@ -64,7 +67,7 @@ export default function LogoSlider() {
     }, []);
 
     return (
-        <div className="container bg-white overflow-hidden logo-slider-container">
+        <div className="container overflow-hidden logo-slider-container">
             <div ref={swiperRef} className="swiper">
                 <div className="swiper-wrapper">
                     {[...logos, ...logos, ...logos].map((logo, index) => (
@@ -78,7 +81,7 @@ export default function LogoSlider() {
                                     alt={logo.alt}
                                     width={190}
                                     height={60}
-                                    className="object-contain grayscale hover:grayscale-0 hover:scale-105 transition-transform duration-300"
+                                    className="w-full h-full object-cover rounded-[20px_20px_0_20px]"
                                 />
                             </div>
                         </div>
