@@ -13,6 +13,7 @@ export default function OurWorksSlider() {
     { id: 3, category: "Branding", title: "BRAND IDENTITY", image: "/images/work__03.png" },
     { id: 4, category: "Web Design", title: "WEBSITE DEVELOPMENT", image: "/images/work__02.png" },
     { id: 5, category: "Branding", title: "BRAND IDENTITY", image: "/images/work__04.png" },
+    { id: 5, category: "Branding", title: "BRAND IDENTITY", image: "/images/work__03.png" },
   ];
 
   return (
