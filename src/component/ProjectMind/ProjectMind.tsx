@@ -13,7 +13,7 @@ export default function ProjectInMind() {
                 <h4 className="relative font-federo text-[18px] text-[#b6ef00] uppercase tracking-[2px] before:content-['•'] before:text-2xl before-text-center before:absolute before:-left-4 before:text-[#b6ef00] flex items-center">
                     Let’s talk
                 </h4>
-                <h1 className='font-federo text-5xl text-white uppercase tracking-[2px] text-center leading-12'>Have a project in mind?</h1>
+                <h1 className='font-federo text-4xl sm:text-5xl text-white uppercase tracking-[2px] text-center leading-12'>Have a project in mind?</h1>
                 <div className='font-barlow flex flex-col lg:flex-row gap-5 lg:gap-2 items-center'>
                     <div className='flex gap-6 text-white'>
                         <FaInstagram className='hover:text-[#b6ef00]' />
